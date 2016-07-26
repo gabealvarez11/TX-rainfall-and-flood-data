@@ -1,0 +1,190 @@
+body { margin:0; padding:0; }
+
+#map { position: absolute; top:85; bottom:0; right:0; left:0; z-index: 0}
+
+#title{
+    position: absolute;
+    top: -8px;
+    left: 20px;
+}
+
+#logo{
+    position: absolute;
+    top: 10px;
+    right:35px;
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px
+}
+
+#instructions{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    font-family: "verdana";
+    font-size: 15px;
+}
+
+#toggleGaugeLayer{
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 15px;
+    left: 580px;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+#toggleQPELayer{
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 15px;
+    left: 780px;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+#resetQPELayer{
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 15px;
+    left: 968px;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+#name{
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    font-family: "verdana";
+    font-size: 10px;
+}
+
+#gaugeLegend{
+    position: absolute;
+    bottom: 20px;
+    left: 160px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    z-index: 1;
+    color: white;
+
+    text-align: center;
+    align-content: center;
+
+}
+
+#qpeLegend{
+    position: absolute;
+    bottom: 320px;
+    left: 20px;
+    background: rgba(0,0,0,0.7);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.container {
+    width: 30px;
+    height: 40px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.legendBox{
+    position: absolute;
+    left: 20px;
+    opacity: 0.9;
+    z-index: 1;
+    width: 123px;
+    height: 20px;
+    color:black;
+    text-align: center;
+    font-family:"verdana";
+}
+
+#above10{
+    background-color: #ffffff;
+    bottom: 300px;
+}
+
+#above8{
+    background-color: #770081;
+    bottom: 280px;
+}
+
+#above6{
+    background-color: #CA00DB;
+    bottom: 260px;
+}
+
+#above5{
+    background-color: #BB0000;
+    bottom: 240px;
+}
+
+#above4{
+    background-color: #FD1616;
+    bottom: 220px;
+}
+
+#above3{
+    background-color: #FC8181;
+    bottom: 200px;
+}
+
+#above2point5{
+    background-color: #FE7100;
+    bottom: 180px;
+}
+
+#above2{
+    background-color: #FEAC00;
+    bottom: 160px;
+}
+
+#above1point5{
+    background-color: #FFFF00;
+    bottom: 140px;
+}
+
+#above1{
+    background-color: #018100;
+    bottom: 120px;
+}
+
+#above0point75{
+    background-color: #73FFDF;
+    bottom: 100px;
+}
+
+#above0point5{
+    background-color: #B4FE00;
+    bottom: 80px;
+}
+
+#above0point25{
+    background-color: #0000FF;
+    bottom: 60px;
+}
+
+#above0point1{
+    background-color: #14A4AB;
+    bottom: 40px;
+}
+
+#above0{
+    background-color: #00FFFF;
+    bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

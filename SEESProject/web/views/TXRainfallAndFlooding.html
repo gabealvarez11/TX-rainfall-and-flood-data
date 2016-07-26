@@ -1,0 +1,70 @@
+<html>
+<head>
+    <!-- Initialize-->
+    <meta charset=utf-8 />
+    <title>TX Rainfall / Flood Data</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <!-- Load Leaflet from CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet-src.js"></script>
+
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://cdn.jsdelivr.net/leaflet.esri/2.0.0/esri-leaflet.js"></script>
+
+    <!-- Load JQuery -->
+    <script src="../Scripts/JQuery/JQuery.2.2.4.js"></script>
+
+    <!--Customized markers from MakiMarker-->
+    <script src="../Scripts/MakiMarkers/Leaflet.MakiMarkers.js"></script>
+
+    <!--Load CSS for page-->
+    <link rel="stylesheet" href="../styles/RainfallMapCSS.css">
+</head>
+
+<body>
+<div id = "title"><h1 style="font-family:verdana">Texas Rainfall and Flood Data</h1></div>
+
+<div id="map"></div>
+
+<span id="instructions">Click anywhere in Texas to display local interactive rainfall point data (QPE). Reset to clear queries. Click the markers for expanded flood gauge data.</span>
+
+<button id="toggleGaugeLayer">Show / Hide Gauge Layer</button>
+<button id="toggleQPELayer">Show / Hide QPE Layer</button>
+<button id="resetQPELayer">Reset QPE Layer</button>
+
+<span id="name">Created by Gabe Alvarez.</span>
+
+<span id="gaugeLegend"><span style="font-family:verdana">Flood Gauge<br>Legend:<br></span>
+    <b>Major</b><div class="container">
+     <img src="../Scripts/MakiMarkers/images/pin-m-circle+f0f.png" alt="Purple" /></div>
+    <b>Moderate</b><div class="container">
+     <img src="../Scripts/MakiMarkers/images/pin-m-circle+f00.png" alt="Red" /></div>
+    <b>Minor</b><div class="container">
+     <img src="../Scripts/MakiMarkers/images/pin-m-circle+f80.png" alt="Orange" /></div>
+    <b>Action</b><div class="container">
+     <img src="../Scripts/MakiMarkers/images/pin-m-circle+ff0.png" alt="Yellow" /></div></span>
+
+<span id="qpeLegend" style="font-family:verdana">QPE Legend:<br>Rainfall (In.)<br></span>
+<span id="above10" class="legendBox">< 10</span>
+<span id="above8" class="legendBox">8 - 10</span>
+<span id="above6" class="legendBox">6 - 8</span>
+<span id="above5" class="legendBox">5 - 6</span>
+<span id="above4" class="legendBox">4 - 5</span>
+<span id="above3" class="legendBox">3 - 4</span>
+<span id="above2point5" class="legendBox">2.5 - 3</span>
+<span id="above2" class="legendBox">2 - 2.5</span>
+<span id="above1point5" class="legendBox">1.5 - 2</span>
+<span id="above1" class="legendBox">1 - 1.5</span>
+<span id="above0point75" class="legendBox">0.75 - 1</span>
+<span id="above0point5" class="legendBox">0.5 - 0.75</span>
+<span id="above0point25" class="legendBox">0.25 - 0.5</span>
+<span id="above0point1" class="legendBox">0.1 - 0.25</span>
+<span id="above0" class="legendBox">0 - 0.1</span>
+
+<img src="../../OtherImages/csrLogo.png" id="logo">
+
+<!-- Run JS code to build map -->
+<script src="../Scripts/GeoJSONData.js"></script>
+</body>
+</html>
